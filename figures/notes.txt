@@ -1,0 +1,1 @@
+Examples for Demonstration on Google Cloud Vision (online platform)
