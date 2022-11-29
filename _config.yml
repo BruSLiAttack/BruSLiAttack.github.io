@@ -2,7 +2,7 @@ theme: jekyll-theme-minimal
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-slate
 title: Project Homepage
-description: Demonstration of the Project
+description: Demonstration of BruSLiAttack - A Sparse Adversarial Attack under Black-box Settings
 
 #remote_theme: pages-themes/minimal@v0.2.0
 #plugins:
