@@ -1,0 +1,3 @@
+![Figure 3b](figures/adv ex-imagenet-different arch-visualization-2.svg#gh-dark-mode-only)
+![Figure 4c](figures/gcv-demonstration-2.svg#gh-dark-mode-only)
+![Figure 5b](figures/Visualization of Dissimilarity Maps-2.svg#gh-dark-mode-only)
