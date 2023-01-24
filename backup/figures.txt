@@ -1,3 +1,7 @@
 ![Figure 3b](figures/adv ex-imagenet-different arch-visualization-2.svg#gh-dark-mode-only)
 ![Figure 4c](figures/gcv-demonstration-2.svg#gh-dark-mode-only)
+![Figure 4b](figures/GCV demo table-2.svg#gh-dark-mode-only)
+
+Figure  5: More examples for demonstration of the sparse adversarial instances yielded by __BruSLiAttack__ against a real-world model on __Google Cloud Vision__ platform.
+
 ![Figure 5b](figures/Visualization of Dissimilarity Maps-2.svg#gh-dark-mode-only)
