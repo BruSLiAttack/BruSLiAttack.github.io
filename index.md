@@ -49,4 +49,4 @@ Figure  4: a) demonstrates results for clean image (no attack) predicted by Goog
 
 ![Figure 5a](figures/Visualization of Dissimilarity Maps.svg#gh-dark-mode-only)
 
-Figure  6: Visualization of Dissimilarity Maps.
+Figure  5: Visualization of Dissimilarity Maps.
