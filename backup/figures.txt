@@ -1,4 +1,9 @@
 ![Figure 3b](figures/adv ex-imagenet-different arch-visualization-2.svg#gh-dark-mode-only)
+
+![Figure 4a](figures/gcv-demonstration.svg)
+
+Figure  4: a) demonstrates results for clean image (no attack) predicted by Google Cloud Vision (GCV). b) shows the predictions from GCV for adversarial examples crafted successfully by BruSLiAttack with less than 3,000 queries and sparsity of 0.05 %. c) shows the results from GCV for adversarial examples crafted by SparseRS with the same sparsity. But SparseRS needs more queries than BruSLiAttack to successfully yield adversarial images or fail to attack with query budget up to 5,000 as shown in Tab. 1.
+
 ![Figure 4c](figures/gcv-demonstration-2.svg#gh-dark-mode-only)
 ![Figure 4b](figures/GCV demo table-2.svg#gh-dark-mode-only)
 
