@@ -47,10 +47,6 @@ Table 1: Demonstration of sparse attacks against GCV in targeted settings. BruSL
 
 Figure  4: a) demonstrates results for clean image (no attack) predicted by Google Cloud Vision (GCV). b) shows the predictions from GCV for adversarial examples crafted successfully by BruSLiAttack with less than 3,000 queries and sparsity of 0.05 %. c) shows the results from GCV for adversarial examples crafted by SparseRS with the same sparsity. But SparseRS needs more queries than BruSLiAttack to successfully yield adversarial images or fail to attack with query budget up to 5,000 as shown in Tab. 1.
 
-![Figure 4b](figures/GCV demo table-2.svg#gh-dark-mode-only)
-
-Figure  5: More examples for demonstration of the sparse adversarial instances yielded by __BruSLiAttack__ against a real-world model on __Google Cloud Vision__ platform.
-
 ![Figure 5a](figures/Visualization of Dissimilarity Maps.svg#gh-dark-mode-only)
 
 Figure  6: Visualization of Dissimilarity Maps.
