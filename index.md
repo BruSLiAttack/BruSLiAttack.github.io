@@ -42,7 +42,3 @@ Figure  3: Targeted Attack. Visualization of Adversarial examples crafted by Bru
 ![Figure 3](figures/GCV demo table.svg)
 
 Table 1: Demonstration of sparse attacks against GCV in targeted settings. BruSLiAttack is able to successfully yield adversarial instances for all five examples with less queries than SparseRS. Especially, for the example of Mushroom, SparseRS fails to attack GCV within a budget of 5000 queries. Demonstration on GCV API (online platform).
-
-![Figure 4](figures/Visualization of Dissimilarity Maps.svg)
-
-Figure  4: Visualization of Dissimilarity Maps.
