@@ -10,3 +10,8 @@ Figure  4: a) demonstrates results for clean image (no attack) predicted by Goog
 Figure  5: More examples for demonstration of the sparse adversarial instances yielded by __BruSLiAttack__ against a real-world model on __Google Cloud Vision__ platform.
 
 ![Figure 5b](figures/Visualization of Dissimilarity Maps-2.svg#gh-dark-mode-only)
+
+
+![Figure 6](figures/Visualization of Dissimilarity Maps.svg)
+
+Figure  6: Visualization of Dissimilarity Maps.
