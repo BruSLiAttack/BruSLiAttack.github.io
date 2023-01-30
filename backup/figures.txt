@@ -1,3 +1,8 @@
+
+![Figure 3](figures/adv ex-imagenet-different arch-visualization.svg#gh-dark-mode-only)
+
+Figure  3: Targeted Attack. Visualization of Adversarial examples crafted by BruSLiAttack with a budget of 5000 queries.
+
 ![Figure 3b](figures/adv ex-imagenet-different arch-visualization-2.svg#gh-dark-mode-only)
 
 ![Figure 4a](figures/gcv-demonstration.svg)
