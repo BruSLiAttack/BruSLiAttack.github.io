@@ -20,3 +20,5 @@ Figure  5: More examples for demonstration of the sparse adversarial instances y
 ![Figure 6](figures/Visualization of Dissimilarity Maps.svg)
 
 Figure  6: Visualization of Dissimilarity Maps.
+
+https://nbviewer.org/github/BruSLiAttack/BruSLiAttack.github.io/blob/main/Paper%20Overview.ipynb
