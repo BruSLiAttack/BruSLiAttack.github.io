@@ -6,7 +6,7 @@ Check out our paper: [BruSLiAttack: Bayesian Algorithm for Query-Efficient Score
 
 Poster: [Poster](...)
 
-[Clean and perturbed samples & artifacts](https://github.com/BruSLiAttack/BruSLiAttack.github.io/tree/main/artifacts) can be downloaded and tested on [Google Cloud Vision](https://cloud.google.com/vision) (Test them for free!!!)
+[Clean and perturbed samples & artifacts](https://github.com/BruSLiAttack/BruSLiAttack.github.io/tree/main/artifacts).
 
 Cite our research: 
 ```
