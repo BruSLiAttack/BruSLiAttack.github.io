@@ -22,7 +22,9 @@ Cite our research:
 
 The potential for extracting information, solely from the output of a machine learning model, poses safety and security threats against real-world systems; especially concerning in an era of proliferating models offered as Machine Learning as a Service (MLaaS). Sparse attacks are of particular interest. Because they aim to discover the minimum number of perturbations to model inputs—$l_0$ bounded perturbations—to craft adversarial examples to misguide model decisions and expose a unique class of hidden model vulnerabilities. But, constructing sparse adversarial perturbations without prior model knowledge, even when models opt to serve confidence score information to queries—in a score-based attack setting—is non-trivial. Because such an attack leads to: i) an NP-hard problem; and ii) a nondifferentiable search space. We develop BruSLiAttack built upon a Bayesian framework for the problem and evaluate against Convolutional deep Neural Networks (CNN), Vision Transformers (ViT) and recent Stylized ImageNet models (SIN). With 10 K queries, our attack can achieve over 98% attack success rate against a CNN model, 87% against a ViT model and 97% against a SIN model on the high-resolution ImageNet and in a targeted setting with just 1% sparsity. Importantly, our highly query-efficient algorithm demonstrates hidden model weaknesses and raises questions regarding the safety of deployed systems. 
 
-#### Demonstration on Google Cloud Vision
-![Figure 1](figures/method_diagram.jpg)
+#### ALGORITHM
 
-Figure 1: a) A source image is classified as _Traffic_ Sign by __Google Cloud Vision (GCV)__. b) With less than _500 queries_, __BruSLiAttack__ is able to yield a sparsity adversarial example (250 of 50,176 pixels are manipulated) misclassified as _Tree_ by GCV.
+![Figure 1](figures/method_diagram.svg)
+
+An illustration of BruSLiAttack attack (detailed in Algorithm 1)—an iterative method based on Bayesian inference aims to
+create a binary matrix u that determines a set of pixels to be replaced by corresponding pixels from a synthetic color image (white and black colors of the matrix denote replaced and non-replaced pixels of the source image respectively). The binary matrix is changed over time by exploring and learning the influence of selected elements captured by θ (darker colors illustrate the higher influence of selected elements) through Bayesian learning to find a winning set of replace pixels
