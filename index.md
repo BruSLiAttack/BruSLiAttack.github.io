@@ -29,6 +29,6 @@ The potential for extracting information, solely from the output of a machine le
 Figure 1: An illustration of BruSLiAttack attack (detailed in Algorithm 1)—an iterative method based on Bayesian inference aims to create a binary matrix u that determines a set of pixels to be replaced by corresponding pixels from a synthetic color image (white and black colors of the matrix denote replaced and non-replaced pixels of the source image respectively). The binary matrix is changed over time by exploring and learning the influence of selected elements captured by θ (darker colors illustrate the higher influence of selected elements) through Bayesian learning to find a winning set of replace pixels.
 
 #### Demonstration on Google Cloud Vision
-![Figure 2](figures/gcv_example_stop_sign.svg)
+![Figure 2](figures/gcv_example_stop_sign_small.svg)
 
 Figure 2: a) A source image is classified as _Traffic_ Sign by __Google Cloud Vision (GCV)__. b) With less than _500 queries_, __BruSLiAttack__ is able to yield a sparsity adversarial example (250 of 50,176 pixels are manipulated) misclassified as _Tree_ by GCV.
