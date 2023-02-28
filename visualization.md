@@ -1,4 +1,4 @@
-#### Illustration of Sparse Adversarial Examples
+## Illustration of Sparse Adversarial Examples
 
 ![Figure 1](figures/imagenet-adv ex-visualization.svg#gh-dark-mode-only)
 
