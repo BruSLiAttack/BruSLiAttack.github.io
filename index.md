@@ -27,6 +27,8 @@ The potential for extracting information, solely from the output of a machine le
 
 Figure 1: a) A source image is classified as _Traffic_ Sign by __Google Cloud Vision (GCV)__. b) With less than _500 queries_, __BruSLiAttack__ is able to yield a sparsity adversarial example (250 of 50,176 pixels are manipulated) misclassified as _Tree_ by GCV.
 
+[Method](/figures/SpaAtt_bayes_bias_diagram_updated.pdf)
+
 #### Illustration of Sparse Adversarial Examples
 
 ![Figure 2](figures/imagenet-adv ex-visualization.svg#gh-dark-mode-only)
