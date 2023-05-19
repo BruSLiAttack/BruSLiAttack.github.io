@@ -1,7 +1,7 @@
 # BruSLiAttack.github.io
 # README 
 
-This is for releasing the source code of the paper [BruSLiAttack: Bayesian Algorithm for Query-Efficient Score Based Sparse Attacks Against Black-Box Deep Learning Models](https://...)
+This is for releasing the source code of the paper [A Query-Efficient Score-Based Sparse Adversarial Attack](https://...)
 
 Poster: [Poster](...)
 
@@ -12,7 +12,7 @@ These clean and perturbed samples & artifacts can be tested on [Google Cloud Vis
 Cite our research: 
 ```
 @inproceedings{Anonymous...,
-    title = {BruSLiAttack: Bayesian Algorithm for Query-Efficient Score Based Sparse Attacks Against Black-Box Deep Learning Models},
+    title = {A Query-Efficient Score-Based Sparse Adversarial Attack},
     year = {...},
     journal = {...},
     author = Anonymous},
