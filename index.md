@@ -2,23 +2,23 @@
 
 Reproduce our results: [GitHub](https://github.com/BruSLiAttack/BruSLiAttack.github.io)
 
-Check out our paper: [BruSLiAttack: Bayesian Algorithm for Query-Efficient Score Based Sparse Attacks Against Black-Box Deep Learning Models](https://...)
+Check out our paper: [A Query-Efficient Score-Based Sparse Adversarial Attack](https://...)
 
 Poster: [Poster](...)
 
 Cite our research: 
 ```
 @inproceedings{Anonymous...,
-    title = {BruSLiAttack: Bayesian Algorithm for Query-Efficient Score Based Sparse Attacks Against Black-Box Deep Learning Models},
+    title = {A Query-Efficient Score-Based Sparse Adversarial Attack},
     year = {...},
-    journal = {...},
+    booktitle = {...},
     author = Anonymous},
 }
 ```
 
 #### ABSTRACT
 
-The potential for extracting information, solely from the output of a machine learning model, poses safety and security threats against real-world systems; especially concerning in an era of proliferating models offered as Machine Learning as a Service (MLaaS). Sparse attacks are of particular interest. Because they aim to discover the minimum number of perturbations to model inputs—$l_0$ bounded perturbations—to craft adversarial examples to misguide model decisions and expose a unique class of hidden model vulnerabilities. But, constructing sparse adversarial perturbations without prior model knowledge, even when models opt to serve confidence score information to queries—in a score-based attack setting—is non-trivial. Because such an attack leads to: i) an NP-hard problem; and ii) a nondifferentiable search space. We develop BruSLiAttack built upon a Bayesian framework for the problem and evaluate against Convolutional deep Neural Networks (CNN), Vision Transformers (ViT) and recent Stylized ImageNet models (SIN). With 10 K queries, our attack can achieve over 98% attack success rate against a CNN model, 87% against a ViT model and 97% against a SIN model on the high-resolution ImageNet and in a targeted setting with just 1% sparsity. Importantly, our highly query-efficient algorithm demonstrates hidden model weaknesses and raises questions regarding the safety of deployed systems. 
+We study the unique and less-well understood problem of generating sparse adversarial attacks simply based on observing the score-based replies to model queries. Sparse attacks aim to discover a minimum number—the l0 bounded—perturbations to model inputs to craft adversarial examples and misguide model decisions. But, in contrast to query-based dense attack counterparts against black-box models, 6 constructing sparse adversarial perturbations, even when models serve confidence score information to queries in a score-based setting, is non-trivial. Because such an attack leads to: i) an NP-hard problem; and ii) a non-differentiable search space. We develop the BRUSLEATTACK—a new algorithm for the problem and evaluate against Convolutional Neural Networks, Vision Transformers, recent Stylized ImageNet models, defense methods and Machine Learning as a Service (MLaaS) offerings exemplified by Google Cloud Vision. The proposed attack scales to achieve state-of-the-art attack success rates and query efficiency on standard computer visions tasks such as ImageNet across various models. Importantly, our highly query-efficient algorithm facilitates faster evaluation of model vulnerabilities and raises questions regarding the safety, security and reliability of deployed systems.
 
 #### ALGORITHM
 
