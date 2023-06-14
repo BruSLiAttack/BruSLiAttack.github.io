@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages of BruSLiAttack
+## Welcome to GitHub Pages of BruSLeAttack
 
 Reproduce our results: [GitHub](https://github.com/BruSLiAttack/BruSLiAttack.github.io)
 
