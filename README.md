@@ -1,7 +1,7 @@
 # BruSLiAttack.github.io
 # README 
 
-This is for releasing the source code of the paper [A Query-Efficient Score-Based Sparse Adversarial Attack](https://...)
+This is for releasing the source code of the paper [BruSLeAttack: Query-Efficient Score-Based Sparse Adversarial Attack](https://...)
 
 Poster: [Poster](...)
 
@@ -12,7 +12,7 @@ These clean and perturbed samples & artifacts can be tested on [Google Cloud Vis
 Cite our research: 
 ```
 @inproceedings{Anonymous...,
-    title = {A Query-Efficient Score-Based Sparse Adversarial Attack},
+    title = {BruSLeAttack: Query-Efficient Score-Based Sparse Adversarial Attack},
     year = {...},
     journal = {...},
     author = Anonymous},
