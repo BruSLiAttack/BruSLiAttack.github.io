@@ -46,3 +46,5 @@ __More visualisations:__ [Link](https://nbviewer.org/github/BruSLiAttack/BruSLiA
 ![Figure 4](figures/Visualization of Dissimilarity Maps.svg)
 
 Figure  4: Visualization of Dissimilarity Maps for Images on _ImageNet_ dataset.
+
+__Attack demonstration__ [Link](https://nbviewer.org/github/BruSLiAttack/BruSLiAttack.github.io/blob/main/Sample%20code%20for%20demonstration%20of%20BruSLeAttack.ipynb)
