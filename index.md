@@ -2,17 +2,17 @@
 
 Reproduce our results: [GitHub](https://github.com/BruSLiAttack/BruSLiAttack.github.io)
 
-Check out our paper: [A Query-Efficient Score-Based Sparse Adversarial Attack](https://...)
+Check out our paper: [BruSLeAttack: Query-Efficient Score-Based Sparse Adversarial Attack](https://openreview.net/forum?id=PAfnMGXief)
 
 Poster: [Poster](...)
 
 Cite our research: 
 ```
-@inproceedings{Anonymous...,
-    title = {A Query-Efficient Score-Based Sparse Adversarial Attack},
-    year = {...},
-    booktitle = {...},
-    author = Anonymous},
+@inproceedings{Vo2024,
+    title = {BruSLeAttack: Query-Efficient Score-Based Sparse Adversarial Attack},
+    year = {2024},
+    booktitle = {International Conference on Learning Representations (ICLR)},
+    author = Viet Quoc Vo and Ehsan Abbasnejad and Damith C. Ranasinghe},
 }
 ```
 
