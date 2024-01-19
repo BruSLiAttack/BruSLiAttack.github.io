@@ -27,16 +27,13 @@ class BruSLeAttack():
 
     def selection(self,x1,f1,x2,f2):
 
-        # x1, f1: parent
-        # x2, f2: offspring
-        # failure approach: update when offspring worst
         xo = x1.copy()
         fo = f1
-        fh_update = 1 # update for Failure approach
+        fh_update = 1 # update 
         if f2<f1:
             fo = f2
             xo = x2
-            fh_update = 0 # non_update => but could be used to update for Success approach
+            fh_update = 0 # non_update 
 
         return xo,fo, fh_update
 
@@ -67,7 +64,7 @@ class BruSLeAttack():
         wi = oimg.shape[2]
         he = oimg.shape[3]
         p = np.zeros(wi*he).astype(int) # 1 => perturbed (starting); 0 => non-perturbed (ori)
-        feval = torch.zeros(self.pop_size).cuda() #+ f_score_eval(model,ori,tar,ori_label,tar_label,p,flag,ftype)
+        feval = torch.zeros(self.pop_size).cuda() 
         pop = []
             
         for i in range(self.pop_size):
@@ -97,9 +94,9 @@ class BruSLeAttack():
                 outp_margin = top_score - tscore # successful if margin < 0
                 if self.ftype=='margin':
                     outp = outp_margin
-                elif self.ftype=='ce': # = nn.CrossEntropyLoss(): inlcude log_softmax
+                elif self.ftype=='ce': 
                     y = torch.tensor([tlabel]).cuda()
-                    outp = F.cross_entropy(pred_score, y, reduction='none')#.detach()
+                    outp = F.cross_entropy(pred_score, y, reduction='none')
 
             else:
                 pred_score = F.softmax(pred_score,dim = 1)
@@ -110,8 +107,7 @@ class BruSLeAttack():
 
         return outp,outp_margin
 
-# =================================== Method 3 =======================================
-    def visited_pixel_map(self,visit_map,p): # record history of all pixels (search space). it can be use to determine age of pixel
+    def visited_pixel_map(self,visit_map,p): # record history of all pixels (search space).
         out_a = visit_map.copy()
         out_a += p # number of time of visit
         out_b = np.clip(out_a,0,1) # count visited or not
@@ -122,11 +118,11 @@ class BruSLeAttack():
 # =================================== Method 4 =======================================
     def sampling(self,fail_map,visit_map,bias_map,p,m):
 
-        ep = 1e-2# 1e-3
+        ep = 1e-2
         num = fail_map + ep# s+a: number of succ + a
         den = visit_map + ep# s+a + N-s+b = N+a+b: number of Visit + a+b 
-        # look at book "ML Fundamental - VHTiep" about smoothing term used in update (Naive Bayes Net/MAP=MLE)
-        # it is a need to avoid den = 0 and num = 0
+        
+        # ep is a need to avoid den = 0 and num = 0
         # num/den < 1
         
         # 1. select remaing bits
@@ -183,25 +179,23 @@ class BruSLeAttack():
             lamda = self.power_stepdecay_scheduler(nqry)
             offspring,old = self.sampling(fail_map,visit_map,bias_map, p,lamda)
 
-            # d. update 
+            # b. score evaluation
             nqry += 1
             ftemp,f_mg = self.feval_score(oimg,timg,olabel,tlabel,offspring)
                 
-            # selection
+            # c. selection
             p,fp,fh_update = self.selection(p,fp,offspring,ftemp)
             
-            # -------- Update -----------
+            # d. update
 
             if fh_update: #
                 fail_map[old] += 1
             visit_map[old] += 1 
             visit_map+=offspring
 
-            # ----------------------------
-
-            # adv = self.modify(p,oimg,timg)
             adv = self.modify(offspring,oimg,timg)
-        
+
+	    # e. for display and termination
             if f_mg>0:
                 if nqry%500 == 0:
                     print('len(xbest): %d; fbest: %2.3f; nqry: %d; L0: %d; n pix: %d; margin score: %2.3f' 
