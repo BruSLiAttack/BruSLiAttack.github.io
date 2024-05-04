@@ -11,11 +11,11 @@ These clean and perturbed samples & artifacts can be tested on [Google Cloud Vis
 
 Cite our research: 
 ```
-@inproceedings{Anonymous...,
-    title = {BruSLeAttack: Query-Efficient Score-Based Sparse Adversarial Attack},
-    year = {...},
-    journal = {...},
-    author = Anonymous},
+@inproceedings{Vo2024,
+    title = {BruSLeAttack: A Query-Efficient Score-Based Black-Box Sparse Adversarial Attack},
+    year = {2024},
+    booktitle = {International Conference on Learning Representations (ICLR)},
+    author = Viet Quoc Vo and Ehsan Abbasnejad and Damith C. Ranasinghe},
 }
 ```
 
