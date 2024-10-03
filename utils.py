@@ -227,3 +227,26 @@ def l0b(img1,img2):
     xo = torch.abs(img1-img2)
     d = torch.sum(xo,1)>0.0
     return d.sum().item()
+
+# ================ l0_projection for HSJA adapted ==============
+def project_l0(original_image, perturbed_images, k):
+    '''
+    1. Clone "https://github.com/Jianbo-Lab/HSJA"
+    2. Replace projection step built for l_2 and l_inf in the original code
+    '''
+    
+    x = np.abs(original_image[0] - perturbed_images[0])
+    wi = original_image.shape[2]
+    x2 = x**2
+    x2 = np.sum(x2,axis=0)
+    x2 = x2.reshape(1,-1)
+    n_same_px = len(np.where(x2==0)[0])
+    out_images = original_image.copy()
+    
+    if n_same_px+k<wi*wi:
+        idxs = np.argsort(x2)[:,n_same_px :n_same_px +k]
+        c1 = idxs //wi
+        c2 = idxs - c1 * wi
+        out_images[:,:,c1,c2] = perturbed_images[:,:,c1,c2]
+
+    return out_images
