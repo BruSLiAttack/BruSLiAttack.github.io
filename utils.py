@@ -121,39 +121,6 @@ def load_model(net,model_path=None):
     net.eval()
     return net
 
-# ======================== Load pre-defined ImageNet subset ========================
-def load_predefined_set(filename,flag):
-    df = pd.read_csv(filename, index_col=0)
-    if flag:
-        # out: [ocla, oID, tcla]
-        np_df = df.to_numpy().astype(int)
-   
-    else:
-        # out: [ocla, oID]
-        column = list(df)
-        if 'tcla' in column:
-            df = df.drop(['tcla'], axis=1)
-        np_df = df.drop_duplicates(subset=['ocla','oID'],keep='first')
-        np_df = np_df.to_numpy().astype(int)
-
-    return np_df
-
-def get_evalset(dataset,arch,flag):
-    if dataset == 'imagenet':
-        if arch == 'resnet50':
-            subset_path = 'imagenet final set 500x5 - ViT-Resnet50.csv'
-        output = load_predefined_set(subset_path,flag)
-
-    elif dataset == 'cifar10' :
-        subset_path = 'cifar10 evaluation set 9000.csv' # for general benchmark
-        output = load_predefined_set(subset_path,flag)
-
-    elif dataset == 'stl10' :
-        subset_path = 'stl10 evaluation set full.csv'
-        output = load_predefined_set(subset_path,flag)
-
-    return output
-
 # ======================== Generate starting img ========================
 
 def search_space_init(img,seed=0,scale=1,mode='uni',scale_mode='INTER_LINEAR'):
